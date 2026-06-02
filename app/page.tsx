@@ -1,8 +1,11 @@
-import React from "react";
+import Image from "next/image";
+import Navbar from "@/components/Navbar";
 import Services from "@/components/services";
-
-export default function page() {
-  return <div>
-         <Services/>
-  </div>;
-}
+export default function Home() {
+   return (
+    <>
+    <Navbar/>
+     <Services/>
+      </>
+   );     
+  }
