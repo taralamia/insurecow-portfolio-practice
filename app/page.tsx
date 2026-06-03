@@ -10,8 +10,10 @@ export default function Home() {
     <>
       <Navbar />
       <Banner />
+      <AboutUs />
       <Services />
       <Projects />
+      
     </>
   );
 }
