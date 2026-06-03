@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const toggleMobileMenu = () => {
@@ -18,8 +19,27 @@ export default function Navbar() {
         <a className="flex items-center" href="/">
           <img alt="InsureCow" width="100" height="50" src="https://website-v1.insurecow.com/media/logos/insurelogo.webp"/>
         </a>
+        {/*Desktop Menu*/}
+        <ul className="flex items-center gap-10">
+          {navLinks.map((link) =>(
+            <li key={link.name}>
+              <Link
+              href={link.href}
+              className="text-slate-600 font-medium capitalize hover:text-blue-600 transition-colors duration-300"
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
+          </ul>
+
        </div>
        </nav>
      </div> 
   );
 }
+/*
+in css if any element position is relative and if there is a span element which position is absolute then the span element will be positioned relative to the nearest positioned. This allows for more precise control over the placement of the span element within its parent container.
+
+
+*/
