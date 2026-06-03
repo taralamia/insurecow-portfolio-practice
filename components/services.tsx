@@ -34,9 +34,9 @@ export default function Services() {
   const [activeModalData, setActiveModalData] = useState<Service | null>(null);
 
   return (
-    <div className="py-12 bg-slate-900 relative">
+    <div className="py-12 bg-white relative">
       <div className="text-center mb-16">
-        <h2 className="text-3xl font-bold text-white tracking-wide uppercase">
+        <h2 className="text-3xl font-bold text-black tracking-wide uppercase">
           Our Services
         </h2>
       </div>
@@ -45,7 +45,7 @@ export default function Services() {
         {serviceData.map((service, index) => (
           <div
             key={index}
-            className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md transform hover:scale-105 transition duration-500 mb-8 md:mb-0"
+            className="relative flex flex-col rounded-xl bg-gray-300 bg-clip-border text-gray-900 shadow-md transform hover:scale-105 transition duration-500 mb-8 md:mb-0"
           >
             {/* card img section */}
             <div className="relative mx-4 -mt-6 h-44 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
