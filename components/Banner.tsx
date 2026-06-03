@@ -3,26 +3,23 @@ import React, { useState, useEffect } from "react";
 import { FaCow } from "react-icons/fa6";
 
 export default function Banner() {
-  
   const bannerImages = [
-   "/ai smart.jpg",
-   "/ai_muzzle_BqmmWF0.png",
-   "/insurance.jpg",
-   "/vetDoctor.jpg",
+    "/ai smart.jpg",
+    "/ai_muzzle_BqmmWF0.png",
+    "/insurance.jpg",
+    "/vetDoctor.jpg",
   ];
 
-  
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
-  
   useEffect(() => {
     const imgInterval = setInterval(() => {
       setCurrentImgIndex((prevIndex) =>
-        prevIndex === bannerImages.length - 1 ? 0 : prevIndex + 1
+        prevIndex === bannerImages.length - 1 ? 0 : prevIndex + 1,
       );
-    }, 2000); 
+    }, 2000);
 
-    return () => clearInterval(imgInterval); 
+    return () => clearInterval(imgInterval);
   }, [bannerImages.length]);
 
   return (
@@ -33,12 +30,14 @@ export default function Banner() {
 
       {/* Main Content Wrapper */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        
         {/* Left Side: Animated Typography & Content */}
         <div className="space-y-6 text-center lg:text-left order-2 lg:order-1">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-[#1e3a1e]/10 text-[#1e3a1e] px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider animate-pulse">
-            <span><FaCow className="text-black w-8 h-6" /></span> Smart Livestock Protection
+            <span>
+              <FaCow className="text-black w-8 h-6" />
+            </span>{" "}
+            Smart Livestock Protection
           </div>
 
           {/* Heading */}
@@ -53,7 +52,9 @@ export default function Banner() {
 
           {/* Subtext Description */}
           <p className="text-gray-600 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
-            Experience next-generation livestock security driven by advanced AI muzzle recognition, regular veterinary audits, and automated insurance layers.
+            Experience next-generation livestock security driven by advanced AI
+            muzzle recognition, regular veterinary audits, and automated
+            insurance layers.
           </p>
 
           {/* Action Buttons */}
@@ -77,39 +78,36 @@ export default function Banner() {
         <div className="relative flex justify-center items-center order-1 lg:order-2">
           {/* Inner Decorative Background Shape */}
           <div className="absolute inset-0 bg-gradient-to-tr from-[#22c55e]/20 to-transparent rounded-3xl rotate-3 scale-105 blur-sm" />
-          
+
           {/* Main Showcase Wrapper with Continuous Floating Animation */}
           <div className="relative w-full max-w-md lg:max-w-lg aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white animate-[float_4s_ease-in-out_infinite]">
-            
-            
             {bannerImages.map((imgUrl, index) => (
               <img
                 key={index}
                 src={imgUrl}
                 alt={`AI Cattle Detection ${index + 1}`}
                 className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
-                  index === currentImgIndex ? "opacity-100 z-10 scale-100" : "opacity-0 z-0 scale-105"
+                  index === currentImgIndex
+                    ? "opacity-100 z-10 scale-100"
+                    : "opacity-0 z-0 scale-105"
                 }`}
               />
             ))}
 
-        
-
-          
             <div className="absolute bottom-4 right-4 flex gap-1.5 z-20 bg-black/40 backdrop-blur-sm p-1.5 rounded-full">
               {bannerImages.map((_, idx) => (
                 <div
                   key={idx}
                   className={`h-1.5 rounded-full transition-all duration-300 ${
-                    currentImgIndex === idx ? "w-4 bg-white" : "w-1.5 bg-white/50"
+                    currentImgIndex === idx
+                      ? "w-4 bg-white"
+                      : "w-1.5 bg-white/50"
                   }`}
                 />
               ))}
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );

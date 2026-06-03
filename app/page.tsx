@@ -5,22 +5,13 @@ import Projects from "@/components/projects";
 import AboutUs from "@/components/AboutUs";
 import Banner from "@/components/Banner";
 
-
-
 export default function Home() {
   return (
     <>
       <Navbar />
-      <AboutUs />
+      <Banner />
       <Services />
       <Projects />
     </>
   );
 }
-    <Navbar/>
-    <Banner/>
-     <Services/>
-<Projects/>
-      </>
-   );     
-  }

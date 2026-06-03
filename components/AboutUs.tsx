@@ -2,9 +2,9 @@ import React from "react";
 
 export default function AboutUs() {
   return (
-      <section className="relative overflow-hidden bg-gradient-to-br from-green-50 via-white to-emerald-50">
+    <section className="relative overflow-hidden bg-gradient-to-br from-green-50 via-white to-emerald-50">
       {/* Background Decorations */}
-     <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-green-200/20 blur-3xl" />
+      <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-green-200/20 blur-3xl" />
       <div className="absolute bottom-0 right-0 h-[30rem] w-[30rem] rounded-full bg-emerald-300/20 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
