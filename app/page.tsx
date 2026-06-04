@@ -4,16 +4,19 @@ import Services from "@/components/services";
 import Projects from "@/components/projects";
 import Banner from "@/components/Banner";
 
-
-
 export default function Home() {
-   return (
+  return (
     <>
-    <Navbar/>
-    <Banner/>
-    <Projects/>
-     <Services/>
-
-      </>
-   );     
-  }
+      <Navbar />
+      <div id="home" className="scroll-mt-24">
+        <Banner />
+      </div>
+      <div id="services" className="scroll-mt-24">
+        <Services />
+      </div>
+      <div id="projects" className="scroll-mt-24">
+        <Projects />
+      </div>
+    </>
+  );
+}
