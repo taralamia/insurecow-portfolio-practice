@@ -18,6 +18,9 @@ export default function Home() {
       <div id="projects" className="scroll-mt-24">
         <Projects />
       </div>
+      <div id="about" className="scroll-mt-24">
+        <AboutUs />
+      </div>
     </>
   );
 }
