@@ -32,10 +32,9 @@ export default function Navbar() {
             </li>
           ))}
           </ul>
-
-       </div>
-       </nav>
-     </div> 
+        </div>
+      </nav>
+    </div>
   );
 }
 /*
