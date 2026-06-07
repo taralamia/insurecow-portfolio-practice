@@ -37,7 +37,7 @@ export default function Banner() {
             <span>
               <FaCow className="text-black w-8 h-6" />
             </span>{" "}
-            Smart Livestock Protection
+            Something
           </div>
 
           {/* Heading */}
