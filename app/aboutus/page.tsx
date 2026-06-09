@@ -1,3 +1,5 @@
+
+
 import AboutUs from "@/components/AboutUs";
 
 export default function AboutUsPage() {
@@ -5,5 +7,6 @@ export default function AboutUsPage() {
   <>
            <AboutUs />
   </>
+
   )
 }

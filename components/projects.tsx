@@ -28,7 +28,7 @@ export default function Projects() {
     <div className=" py-16 bg-[#f4f2ea] text-white overflow-hidden">
       {/* Section Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-black tracking-wide uppercase">Our Projects</h2>
+        <h2 className="text-5xl md:text-5xl font-bold tracking-tight leading-tight  text-green-950 ">Our Projects</h2>
       </div>
 
       {/* Main Slider Window Wrapper */}
