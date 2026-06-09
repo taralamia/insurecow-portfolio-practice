@@ -4,30 +4,35 @@ export default function AboutUs() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-green-50 via-white to-emerald-50">
       {/* Background Decorations */}
-      <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-green-200/20 blur-3xl" />
+      <div className="absolute top-0 left-0  h-75 w-65 rounded-full bg-emerald-300/20 blur-3xl" />
       <div className="absolute bottom-0 right-0 h-[30rem] w-[30rem] rounded-full bg-emerald-300/20 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
         {/* ================= HERO ================= */}
-        <section className="pt-24 pb-20 md:pt-32 md:pb-24">
-          <div className="max-w-4xl animate-fade-up">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-green-600 mb-6">
-              About InsureCow
-            </p>
+        <section className="pt-24 md:pt-32">
+  <div className="grid lg:grid-cols-12 gap-16">
+    <div className="lg:col-span-7">
+      <h1 className="text-sm font-semibold uppercase tracking-[0.25em] text-green-600 mb-6">
+        About InsureCow
+      </h1>
 
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight text-green-950 mb-8">
-              Building Financial Resilience for Farmers Through Innovative
-              Insurance Infrastructure
-            </h1>
+      <div className="space-y-8">
+        <p className="text-xl md:text-2xl leading-relaxed text-gray-700">
+          By developing solutions in one of the world&apos;s most demanding
+          agricultural markets, we create systems designed for deployment
+          across emerging economies globally.
+        </p>
 
-            <p className="text-xl md:text-2xl leading-relaxed text-gray-700 max-w-3xl">
-              InsureCow develops AI-powered fintech and insurtech infrastructure
-              that enables insurers, financial institutions, and development
-              partners to bring insurance protection to underserved agricultural
-              communities at scale.
-            </p>
-          </div>
-        </section>
+        <p className="text-xl md:text-2xl leading-relaxed text-gray-700">
+          InsureCow develops AI-powered fintech and insurtech infrastructure
+          that enables insurers, financial institutions, and development
+          partners to bring insurance protection to underserved agricultural
+          communities at scale.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* ================= WHO WE ARE ================= */}
         <section className="pt-16 pb-24 md:pt-20 md:pb-32 border-t border-green-100">
@@ -58,7 +63,7 @@ export default function AboutUs() {
                 </p>
 
                 <p>
-                  By developing solutions in one of the world's most demanding
+                  By developing solutions in one of the world&apos;s most demanding
                   agricultural markets, we create systems designed for
                   deployment across emerging economies globally.
                 </p>
@@ -83,7 +88,7 @@ export default function AboutUs() {
                     </h4>
 
                     <p className="text-gray-600 mt-2">
-                      Venture capital–backed holding company owning the group's
+                      Venture capital–backed holding company owning the group&apos;s
                       core AI technology, data models, and intellectual
                       property.
                     </p>
@@ -166,8 +171,8 @@ export default function AboutUs() {
 
           <div className="max-w-5xl">
             <p className="text-lg leading-8 text-gray-700">
-              Bangladesh serves as the primary proving ground for InsureCow's
-              technology. Agriculture remains the country's largest employment
+              Bangladesh serves as the primary proving ground for InsureCow&apos;s
+              technology. Agriculture remains the country&apos;s largest employment
               sector, supporting millions of households and livelihoods.
               Livestock and poultry ownership is widespread, yet a significant
               portion of these assets remain undocumented and uninsured. This
