@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 "use client";
 import React from "react";
 import Link from "next/link";
@@ -14,14 +15,14 @@ export default function Navbar() {
     <div>
       <nav className="block w-full max-w-screen px-4 py-4 mx-auto bg-gradient-to-r from-white/20 via-white/10 to-white/20 sticky top-3 shadow lg:px-8 backdrop-blur-lg backdrop-saturate-100">
         <div className="container flex flex-wrap items-center justify-between mx-auto text-slate-500">
-          <a className="flex items-center" href="/">
+          <Link className="flex items-center" href="/">
             <img
               alt="InsureCow"
               width="200"
               height="90"
               src="https://website-v1.insurecow.com/media/logos/insurelogo.webp"
             />
-          </a>
+          </Link>
           {/*Desktop Menu*/}
           <ul className="flex items-center gap-10">
             {navLinks.map((link) => (
