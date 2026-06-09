@@ -36,7 +36,7 @@ export default function Services() {
   return (
     <div className="py-12 bg-white relative">
       <div className="text-center mb-16">
-        <h2 className="text-3xl font-bold text-black tracking-wide uppercase">
+        <h2 className="text-5xl md:text-5xl font-bold tracking-tight leading-tight  text-green-950 ">
           Our Services
         </h2>
       </div>
@@ -45,10 +45,10 @@ export default function Services() {
         {serviceData.map((service, index) => (
           <div
             key={index}
-            className="relative flex flex-col rounded-xl bg-gray-300 bg-clip-border text-gray-900 shadow-md transform hover:scale-105 transition duration-500 mb-8 md:mb-0"
+            className="relative flex flex-col rounded-xl bg-green-100 bg-clip-border text-green-900 shadow-md transform hover:scale-105 transition duration-500 mb-8 md:mb-0"
           >
             {/* card img section */}
-            <div className="relative mx-4 -mt-6 h-44 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+            <div className="relative mx-4 -mt-6 h-44 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-500/40 bg-gradient-to-r from-green-500 to-green-600">
               <img
                 src={service.image}
                 alt={service.title}
@@ -58,7 +58,7 @@ export default function Services() {
 
             {/* card text */}
             <div className="p-6 flex-grow">
-              <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+              <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-green-gray-900 antialiased">
                 {service.title}
               </h5>
               <p className="block font-sans text-sm font-light leading-relaxed text-gray-600 antialiased">
@@ -71,7 +71,7 @@ export default function Services() {
               <button
                 onClick={() => setActiveModalData(service)}
                 type="button"
-                className="w-full select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40"
+                className="w-full select-none rounded-lg bg-green-900 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40"
               >
                 Read More
               </button>

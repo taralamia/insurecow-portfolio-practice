@@ -9,18 +9,14 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div id="home" className="scroll-mt-24">
-        <Banner />
-      </div>
-      <div id="services" className="scroll-mt-24">
-        <Services />
-      </div>
-      <div id="projects" className="scroll-mt-24">
-        <Projects />
-      </div>
-      <div id="about" className="scroll-mt-24">
-        <AboutUs />
-      </div>
+
+      <Banner />
+
+      <Services />
+
+      
+
+      <AboutUs />
     </>
   );
 }
