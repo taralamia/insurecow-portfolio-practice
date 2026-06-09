@@ -1,12 +1,9 @@
-import React from 'react'
-
-import Services from '@/components/services'
+import Services from "@/components/Service";
 
 export default function services() {
   return (
-    <>
-        <Services/>
-    </>
+  <>
+           <Services />
+  </>
   )
 }
-
