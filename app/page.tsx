@@ -11,16 +11,8 @@ export default function Home() {
       <Navbar />
 
       <Banner />
-<<<<<<< HEAD
-
-      <Services />
-
-      
-
-=======
       <Services />
       <Projects />
->>>>>>> 4ba70c9f45e8b187443ca27133fc0af535aa9f60
       <AboutUs />
     </>
   );
